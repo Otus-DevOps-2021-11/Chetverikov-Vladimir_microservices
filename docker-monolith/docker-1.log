@@ -1,0 +1,19 @@
+PS C:\Users\Professional> docker images
+REPOSITORY                     TAG       IMAGE ID       CREATED         SIZE
+vchetverikov/ubuntu-tmp-file   latest    ca3ba39fc073   8 seconds ago   63.2MB
+ubuntu                         18.04     dcf4d4bef137   3 days ago      63.2MB
+redis                          6.2.6     b8477f2e393b   4 months ago    113MB
+hello-world                    latest    feb5d9fea6a5   4 months ago    13.3kB
+gcr.io/k8s-minikube/kicbase    v0.0.27   9fa1cc16ad6d   4 months ago    1.08GB
+ubuntu                         16.04     b6f507652425   5 months ago    135MB
+
+Задание со *
+Сравните вывод двух следующих команд
+$ docker inspect <u_container_id>
+$ docker inspect <u_image_id>
+На основе вывода команд объясните чем отличается контейнер от
+образа. Объяснение допишите в файл dockermonolith/docker-1.log
+
+У контейнера и образа различный набор полей.
+Образ является подготовленным шаблоном для запуска контейнера. На основе образа могут быть запущены несколько контейнеров.
+Контейнер является экземпляром запущенного образа. В описании контейнера есть используемый образ, состояния, настройки сети и пр.
