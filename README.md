@@ -73,7 +73,7 @@ docker run -d --network=reddit -p 9292:9292 vchetverikov/ui:2.0
   • версии сервисов
 - Параметризованные параметры записаны в отдельный файл compose-config.env
 - Файл compose-config.env добавлен в .gitignore
-- Добавлен файл compose-config.env.example
+- Добавлен файл .env.example
 
 **Задание:**
 
