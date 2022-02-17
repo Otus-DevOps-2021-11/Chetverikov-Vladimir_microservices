@@ -13,7 +13,7 @@ before_script:
   - cd reddit
   - bundle install
 default:
-  image: alpine/bundle:latest
+  image: ruby:2.4.2
 
 build_job:
   stage: build
