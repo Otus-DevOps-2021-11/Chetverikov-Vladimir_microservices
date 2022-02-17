@@ -9,6 +9,8 @@ variables:
 before_script:
   - cd reddit
   - bundle install
+default:
+  image: alpine/bundle:latest
 
 build_job:
   stage: build
