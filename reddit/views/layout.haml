@@ -35,6 +35,7 @@
             - @flashes.each do |flash|
               .alert{class: flash[:type]}
                 %strong #{flash[:message]}
+          = yield
         .col-lg-3
           .well.sidebar-nav
             %h3 Menu
