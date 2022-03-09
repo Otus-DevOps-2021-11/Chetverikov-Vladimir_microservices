@@ -93,4 +93,9 @@ docker run -d --network=reddit -p 9292:9292 vchetverikov/ui:2.0
 - Подготовлен репозиторий с кодом
 - Описан gitlab-ci с определением окружения
 
+# Monitoring-1
+
+Ссылка на dockerhub https://hub.docker.com/repository/docker/vchetverikov
+
+
 
