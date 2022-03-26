@@ -99,3 +99,8 @@ docker run -d --network=reddit -p 9292:9292 vchetverikov/ui:2.0
 
 
 
+# Kubernetes-1
+
+- Добавлены манифесты deployment для частей приложения reddit
+- Установлен minikube
+- Добавлена папка the_hard_way и пустые файлы, которые требовали тесты. Ни про папку,  ни про файлы в методичке ни слова. 
