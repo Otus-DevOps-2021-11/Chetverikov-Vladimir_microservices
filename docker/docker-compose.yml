@@ -19,17 +19,29 @@ services:
     networks:
       - back_net
       - front_net
+    environment:
+      - POST_DATABASE_HOST=post_db
+      - POST_DATABASE=posts
+      - ZIPKIN_ENABLED=${ZIPKIN_ENABLED}
+    depends_on:
+      - post_db
+    ports:
+      - "5000:5000"
     logging:
       driver: "fluentd"
       options:
         fluentd-address: localhost:24224
         tag: service.post
+
   comment:
     build: ../src/comment
     image: ${DOCKER_USER}/comment:${COMMENT_VERSION}
     networks:
       - back_net
       - front_net
+    environment:
+      - ZIPKIN_ENABLED=${ZIPKIN_ENABLED}
+
   prometheus:
     image: ${DOCKER_USER}/prometheus
     ports:
