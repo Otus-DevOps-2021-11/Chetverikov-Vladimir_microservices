@@ -28,6 +28,7 @@ spec:
         - name: mongo-persistent-storage
           mountPath: /data/db
       volumes:
+      #name: mongo-dce-pd-storage
       - name: mongo-persistent-storage
         persistentVolumeClaim:
           claimName: mongo-pvc
