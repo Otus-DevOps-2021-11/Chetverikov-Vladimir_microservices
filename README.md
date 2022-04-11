@@ -116,3 +116,8 @@ docker run -d --network=reddit -p 9292:9292 vchetverikov/ui:2.0
 - Приложение развернуто в кластере k8s в yandex cloud
 - Можно посмотреть http://51.250.66.188:32138/
 - ![img.png](img.png)
+
+# Kubernetes 3
+- Развернут ингресс для ui
+- Настроены Network policy
+- Создано постоянное хранилище для mongo
